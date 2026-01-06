@@ -1,0 +1,37 @@
+{
+  "name": "bgio-sqlite",
+  "version": "0.1.0",
+  "description": "SQLite storage adapter for boardgame.io",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib/**/*"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "clean": "rm -rf lib"
+  },
+  "keywords": ["boardgame.io", "sqlite", "storage", "database", "bgio"],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manuelpa-ms/bgio-sqlite.git"
+  },
+  "peerDependencies": {
+    "boardgame.io": ">=0.40.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.0",
+    "boardgame.io": "^0.50.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.0"
+  }
+}
